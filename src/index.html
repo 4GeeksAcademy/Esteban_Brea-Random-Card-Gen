@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random card generation</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -11,19 +11,29 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
-    </div>
+  <body
+    class="container-fluid bg-dark bg-opacity-10 d-flex flex-column justify-content-center align-items-center p-3"
+  >
+    <input
+      type="number"
+      id="cardWidth"
+      placeholder="Play With Width"
+      class="mb-2 input-group-text"
+    />
+    <input
+      type="number"
+      id="cardHeight"
+      placeholder="Play With Height"
+      class="mb-2 input-group-text"
+    />
+    <button id="applyDimensions" class="btn btn-dark shadow-lg mb-2">
+      Apply Dimensions
+    </button>
+    <button id="nuevaCarta" class="btn btn-outline-warning mb-2 shadow-lg">
+      Generate New Card
+    </button>
+    <div id="card" class="card colorPalo"></div>
   </body>
 </html>

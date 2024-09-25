@@ -1,1 +1,68 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+.red {
+  color: #c72c41;
+}
+
+.black {
+  color: black;
+}
+
+.card {
+  width: 250px;
+  height: 350px;
+  background: #d3d3d3;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: linear-gradient(white, #f2f2f2);
+}
+
+.card.flip {
+  transform: translate3d(50px, 20px, 10px) rotateY(120deg);
+}
+
+.top-palo,
+.bottom-palo {
+  font-size: 80px;
+}
+
+.number {
+  font-size: 100px;
+  text-align: center;
+}
+
+.top-palo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.bottom-palo {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+.number,
+.top-palo,
+.bottom-palo {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+body {
+  background-image: url("https://img.freepik.com/vector-premium/fondo-mesa-poker-color-verde_47243-1094.jpg?w=1060");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+}
