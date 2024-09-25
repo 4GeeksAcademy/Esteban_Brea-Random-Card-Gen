@@ -31,10 +31,8 @@ window.onload = function() {
         "K"
       ];
 
-      let randomElement = array => {
-        let numArray = Math.floor(Math.random() * array.length);
-        return array[numArray];
-      };
+      const randomElement = array =>
+        array[Math.floor(Math.random() * array.length)];
 
       const randomPalos = randomElement(palos);
       const randomValores = randomElement(valores);
